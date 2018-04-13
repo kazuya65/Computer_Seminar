@@ -10,9 +10,7 @@
 関数 f(x) = 0 となる x を範囲 [a, b] の中から見つける C の関数
 
 
-<p>
       double bisection(double a, double b, double (\*f)(double))
-</p>
 
 
 を作成せよ．
@@ -27,9 +25,9 @@ Power Method
 離散時間マルコフ連鎖における状態推移確率行列 P があるとき，x = x P となる定常ベクトル x を
 求める関数
 
-<p>
+
     void dtmc_power_method(int n, double　\*x0, double \*P, double \*x)
-</p>
+
 
 を作成せよ．Power Method は以下の計算を x が収束するまで行う．
   x = x P
