@@ -7,19 +7,25 @@
 宿題
 二分法
 関数 f(x) = 0 となる x を範囲 [a, b] の中から見つける C の関数
- double bisection(double a, double b, double (*f)(double))
+
+     double bisection(double a, double b, double (\*f)(double))
+
 を作成せよ．
 
-例題として
+例題
 f(x)=10x+100
 [a,b]=[-20, 100]
-を用意しておきます。
+を先ほどの関数を用いて計算せよ。
 
 
 Power Method
 離散時間マルコフ連鎖における状態推移確率行列 P があるとき，x = x P となる定常ベクトル x を
 求める関数
-  void dtmc_power_method(int n, double *x0, double *P, double *x)
+
+
+    void dtmc_power_method(int n, double　\*x0, double \*P, double \*x)
+
+
 を作成せよ．Power Method は以下の計算を x が収束するまで行う．
   x = x P
 関数 dtmc_power_method の引数 x0 には初期のベクトルをわたし，
@@ -27,10 +33,9 @@ Power Method
 また，行列 P は二次元配列でなく一次元の配列で与える．
 
 以下の状態遷移確率行列について行ってください。
-$$
-\begin{bmatrix}
-0.6 & 0.3 & 0.1 \\\
-0.3 & 0.6 & 0.1 \\\
-0.2 & 0.3 & 0.5 \\\
-\end{bmatrix}
-&&
+
+
+<img src="https://latex.codecogs.com/gif.latex?\begin{bmatrix}&space;0.6&space;&&space;0.3&space;&&space;0.1&space;\\&space;0.3&space;&&space;0.6&space;&&space;0.1&space;\\&space;0.2&space;&&space;0.3&space;&&space;0.5&space;\end{bmatrix}" />
+
+
+x0=(1,0,0)
